@@ -1,9 +1,7 @@
 streamlit
-openai
-langchain
+python-dotenv
 langchain-community
 langchain-openai
 langchain-text-splitters
 faiss-cpu
 docx2txt
-python-dotenv
