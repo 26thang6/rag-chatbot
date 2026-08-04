@@ -5,3 +5,7 @@ SHB có dịch vụ thẻ tín dụng.
 Thẻ tín dụng cho phép khách hàng chi tiêu trước và thanh toán sau.
 
 Giờ làm việc từ thứ Hai đến thứ Sáu.
+
+Lãi suất gửi tiết kiệm là 10% năm.
+
+Lãi suất vay là bao nhiêu 12% năm.
