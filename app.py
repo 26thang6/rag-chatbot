@@ -29,7 +29,7 @@ USER_ICON = BASE_DIR / "user_icon.png"
 # =========================================================
 
 EMBEDDING_MODEL = "text-embedding-3-large"
-CHAT_MODEL = "gpt-4.1"
+CHAT_MODEL = "gpt-5.6"
 
 CHUNK_SIZE = 800
 CHUNK_OVERLAP = 150
