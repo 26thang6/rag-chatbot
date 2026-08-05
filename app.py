@@ -1,17 +1,3 @@
-import streamlit as st
-
-st.set_page_config(page_title="SHB Chatbot", page_icon="💬")
-st.write("CHECKPOINT 1: Streamlit started")
-print("CHECKPOINT 1: Streamlit started", flush=True)
-
-import os
-st.write("CHECKPOINT 2: Basic imports done")
-print("CHECKPOINT 2: Basic imports done", flush=True)
-
-# Sau đó mới import các thư viện nặng
-st.write("CHECKPOINT 3: Importing heavy libraries...")
-print("CHECKPOINT 3: Importing heavy libraries...", flush=True)
-
 import base64
 import logging
 import os
