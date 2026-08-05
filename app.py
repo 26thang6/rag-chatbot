@@ -1,3 +1,17 @@
+import streamlit as st
+
+st.set_page_config(page_title="SHB Chatbot", page_icon="💬")
+st.write("CHECKPOINT 1: Streamlit started")
+print("CHECKPOINT 1: Streamlit started", flush=True)
+
+import os
+st.write("CHECKPOINT 2: Basic imports done")
+print("CHECKPOINT 2: Basic imports done", flush=True)
+
+# Sau đó mới import các thư viện nặng
+st.write("CHECKPOINT 3: Importing heavy libraries...")
+print("CHECKPOINT 3: Importing heavy libraries...", flush=True)
+
 import base64
 import logging
 import os
@@ -12,18 +26,6 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-st.write("1. App started")
-
-st.write("2. Loading documents...")
-# đoạn đọc file data
-
-st.write("3. Loading embedding model...")
-# đoạn load model embedding
-
-st.write("4. Building FAISS...")
-# đoạn tạo vector store
-
-st.write("5. Ready")
 
 # =========================================================
 # CẤU HÌNH ĐƯỜNG DẪN
