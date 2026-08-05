@@ -473,6 +473,26 @@ footer {
         font-size: 25px;
     }
 }
+@media (max-width: 768px) {
+    .block-container {
+        padding-top: 5.5rem !important;
+        padding-bottom: 8.5rem !important;
+    }
+
+    [data-testid="stAppViewContainer"] {
+        padding-bottom: 7rem !important;
+    }
+
+    [data-testid="stChatInput"] {
+        position: fixed !important;
+        bottom: 0.75rem !important;
+        left: 0.75rem !important;
+        right: 0.75rem !important;
+        z-index: 9999 !important;
+    }
+}
+
+
 </style>
         """.replace("__APP_BACKGROUND__", app_background),
         unsafe_allow_html=True,
