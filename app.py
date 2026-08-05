@@ -398,38 +398,52 @@ def apply_custom_style() -> None:
     object-fit: cover;
 }
 
+/* Chat input */
 [data-testid="stChatInput"] {
-    background: #ffffff !important;
-    border: 1px solid #cfd2d8;
-    box-shadow: 0 3px 12px rgba(17, 24, 39, 0.09);
-    color-scheme: light !important;
+    background-color: transparent !important;
 }
 
-[data-testid="stChatInput"] > div,
-[data-testid="stChatInput"] [data-baseweb="textarea"],
-[data-testid="stChatInput"] [data-baseweb="base-input"] {
-    background: #ffffff !important;
-    color-scheme: light !important;
+[data-testid="stChatInput"] > div {
+    background-color: #ffffff !important;
+    border-radius: 16px !important;
+    border: 1px solid #e0e0e0 !important;
 }
 
-[data-testid="stChatInput"] textarea,
-[data-testid="stChatInputTextArea"],
-[data-testid="stChatInput"] input,
-[data-testid="stChatInput"] [contenteditable="true"] {
-    background: #ffffff !important;
-    color: #111827 !important;
-    -webkit-text-fill-color: #111827 !important;
-    caret-color: #111827 !important;
+[data-testid="stChatInput"] textarea {
+    color: #222222 !important;
+    -webkit-text-fill-color: #222222 !important;
+    caret-color: #222222 !important;
     opacity: 1 !important;
 }
 
-[data-testid="stChatInput"] textarea::placeholder,
-[data-testid="stChatInputTextArea"]::placeholder,
-[data-testid="stChatInput"] input::placeholder {
-    color: #6b7280 !important;
-    -webkit-text-fill-color: #6b7280 !important;
+[data-testid="stChatInput"] textarea::placeholder {
+    color: #777777 !important;
+    -webkit-text-fill-color: #777777 !important;
     opacity: 1 !important;
 }
+
+/* Fix chat input trên điện thoại */
+@media (max-width: 768px) {
+    [data-testid="stChatInput"] > div,
+    [data-testid="stChatInput"] [data-baseweb="textarea"],
+    [data-testid="stChatInput"] textarea {
+        background-color: #24252e !important;
+    }
+
+    [data-testid="stChatInput"] textarea {
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+        caret-color: #ffffff !important;
+        opacity: 1 !important;
+    }
+
+    [data-testid="stChatInput"] textarea::placeholder {
+        color: #aeb2bd !important;
+        -webkit-text-fill-color: #aeb2bd !important;
+        opacity: 1 !important;
+    }
+}
+
 
 .stButton > button {
     border-radius: 10px;
