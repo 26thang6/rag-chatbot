@@ -267,7 +267,7 @@ def apply_custom_style() -> None:
 .block-container {
     max-width: none;
     width: 100%;
-    padding: 1.25rem 2.5rem 7rem;
+    padding: 4.5rem 2.5rem 7rem;
 }
 
 [data-testid="stSidebar"] {
@@ -399,13 +399,36 @@ def apply_custom_style() -> None:
 }
 
 [data-testid="stChatInput"] {
-    background: #ffffff;
+    background: #ffffff !important;
     border: 1px solid #cfd2d8;
     box-shadow: 0 3px 12px rgba(17, 24, 39, 0.09);
+    color-scheme: light !important;
 }
 
-[data-testid="stChatInput"] textarea {
-    color: #222222;
+[data-testid="stChatInput"] > div,
+[data-testid="stChatInput"] [data-baseweb="textarea"],
+[data-testid="stChatInput"] [data-baseweb="base-input"] {
+    background: #ffffff !important;
+    color-scheme: light !important;
+}
+
+[data-testid="stChatInput"] textarea,
+[data-testid="stChatInputTextArea"],
+[data-testid="stChatInput"] input,
+[data-testid="stChatInput"] [contenteditable="true"] {
+    background: #ffffff !important;
+    color: #111827 !important;
+    -webkit-text-fill-color: #111827 !important;
+    caret-color: #111827 !important;
+    opacity: 1 !important;
+}
+
+[data-testid="stChatInput"] textarea::placeholder,
+[data-testid="stChatInputTextArea"]::placeholder,
+[data-testid="stChatInput"] input::placeholder {
+    color: #6b7280 !important;
+    -webkit-text-fill-color: #6b7280 !important;
+    opacity: 1 !important;
 }
 
 .stButton > button {
