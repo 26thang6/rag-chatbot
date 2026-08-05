@@ -267,7 +267,7 @@ def apply_custom_style() -> None:
 .block-container {
     max-width: none;
     width: 100%;
-    padding: 4.5rem 2.5rem 7rem;
+    padding: 7.5rem 2.5rem 7rem;
 }
 
 [data-testid="stSidebar"] {
