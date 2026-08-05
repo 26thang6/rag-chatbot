@@ -12,6 +12,18 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
+st.write("1. App started")
+
+st.write("2. Loading documents...")
+# đoạn đọc file data
+
+st.write("3. Loading embedding model...")
+# đoạn load model embedding
+
+st.write("4. Building FAISS...")
+# đoạn tạo vector store
+
+st.write("5. Ready")
 
 # =========================================================
 # CẤU HÌNH ĐƯỜNG DẪN
