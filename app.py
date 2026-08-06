@@ -492,6 +492,24 @@ footer {
     }
 }
 
+/* Safari iPhone fix */
+/* Safari iPhone fix */
+@supports (-webkit-touch-callout: none) {
+    [data-testid="stChatMessage"] p,
+    [data-testid="stChatMessage"] li,
+    [data-testid="stChatMessage"] span {
+        color: #1f2937 !important;
+        -webkit-text-fill-color: #1f2937 !important;
+        opacity: 1 !important;
+    }
+
+    [data-testid="stChatMessage"] strong,
+    [data-testid="stChatMessage"] b {
+        color: #111827 !important;
+        -webkit-text-fill-color: #111827 !important;
+        opacity: 1 !important;
+    }
+}
 
 </style>
         """.replace("__APP_BACKGROUND__", app_background),
